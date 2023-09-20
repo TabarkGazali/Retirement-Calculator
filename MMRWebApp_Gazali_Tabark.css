@@ -1,0 +1,92 @@
+body {
+	font-family:  		sans-serif;
+	font-size: 			24px;
+	background-color: 	white;
+}
+
+.center {
+	margin: 			auto;
+	display: 			table;
+}
+
+input[type=number] {
+	text-align: 		right;
+	font-family: 		monospace;
+	font-size: 			1.0em;
+	width: 				12em;
+}
+
+#inputTableId th {
+	color: 				brown;
+	font-size: 			0.85em;
+}
+
+
+
+input:invalid 			{ border: 2px solid #A00000; }
+input:valid 			{ border: 2px solid #00A000; }
+input:focus:invalid 	{ color: red; }
+input:focus:valid 		{ color: black; }
+
+button {
+	font-size: 			0.96em;
+	background-color: 	#bbbbbb;
+	margin: 			10px;
+	width: 				8.0em;
+}
+
+
+.resultsTable {
+	font-family: 		monospace;
+	font-weight: 		normal;
+	text-align: 		right;
+	border-collapse: 	collapse;
+	border:solid black 1px;
+}
+
+.resultsTable td {
+
+	
+	border-collapse: collapse;
+	padding-left: 		12px;
+	padding-right: 		12px;
+}
+.resultsTable th{
+	
+	border-collapse: collapse;
+	padding-left: 		12px;
+	padding-right: 		12px;
+
+}
+
+#totalResultsTableId {
+	color: 				black;
+	background-color: 	#ffefd3;
+	float:  			left;
+}
+
+
+.invisible-table {
+    border-spacing: 3;
+    font-size: 3;
+	margin: auto;
+	font-family: monospace;
+  }
+  
+  .invisible-table td {
+    border: black;
+    padding: 3;
+    font-size: 22px;
+	
+  }
+
+  .SummaryNumber{
+	text-align: right;
+	font-family: monospace;
+
+  }
+
+  .summaryLable{
+	text-align: left;
+	font-family: sans-serif;
+  }

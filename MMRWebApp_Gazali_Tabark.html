@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Retirement Calculator</title>
+	<link rel="stylesheet" type="text/css" href="./MMRWebApp_Gazali_Tabark.css">
+	</style>
+</head>
+
+<body onload="initialize()">
+	<h1 class="center">Retirement Calculator</h1>
+
+	<form id="inputFormId">
+		<table id="inputTableId" class="center">
+
+			<tr>
+				<td>
+					<input id="StartingAgeId" type="number" value="25" min="0" max="120" placeholder="Starting Age"
+						required>
+				</td>
+				<td>
+					<input id="retirementAgeId" type="number" value="65" min="0" max="999999"
+						placeholder="Retirement Age" required>
+				</td>
+			</tr>
+
+
+			<tr>
+				<td>
+					<input id="startingSalaryId" type="number" value="50000" min="0" max="1000000000"
+						placeholder="Starting Salary" required>
+				</td>
+				<td>
+					<input id="annualSavingsPercentId" type="number" value="10.0" min="0.0" max="100"
+						placeholder="Annual Saving%" required>
+				</td>
+			</tr>
+
+
+			<tr>
+				<td>
+					<input id="annualRaisePercentId" type="number" value="2.0" min="1" max="99"
+						placeholder="Annual Raise%" required>
+				</td>
+				<td>
+					<input id="InterestRateId" type="number" value="7.0" min="1" max="99" placeholder="Interest Rate%"
+						required>
+				</td>
+			</tr>
+		</table>
+
+
+
+
+
+
+		<div id="buttonDivId" class="center">
+			<button type="button" onclick="clearInputs(this.form)">
+				Clear
+			</button>
+
+			<button type="button" onclick="loadDefaults(this.form)">
+				Defaults
+			</button>
+
+			<button type="button" onclick="runComparison(this.form)">
+				Make Me Rich!
+			</button>
+		</div>
+
+	</form>
+
+
+
+	<table class="invisible-table">
+		<tr>
+
+			<td id="totalYearsToInvest" class="SummaryNumber">999,999</td>
+			<td class="summaryLable"> Years to invest </td>
+</tr>
+		</tr>
+
+		<tr>
+			<td id="totalRetirementfund" class="SummaryNumber">999,999</td>
+			<td class="summaryLable"> Retirement Fund </td>
+		</tr>
+
+
+		<tr>
+			<td id="LifeTimeSalary" class="SummaryNumber">999,999</td>
+			<td class="summaryLable"> Lifetime Salary</td>
+		</tr>
+
+		<tr>
+			<td id="totalSaved" class="SummaryNumber">999,999</td>
+			<td class="summaryLable"> Total Saved</td>
+		</tr>
+
+		<tr>
+			<td id="totalEarnedInterest" class="SummaryNumber">999,999</td>
+			<td class="summaryLable"> Earned Interest</td>
+		</tr>
+
+
+	</table>
+
+
+
+	<div id="resultsId" class="center">
+		<table id="totalResultsTableId" class="resultsTable">
+			<tr>
+				<th>Age</th>
+				<th>Salary</th>
+				<th>Saving</th>
+				<th>Interest</th>
+				<th>Retirement</th>
+			</tr>
+		</table>
+	</div>
+
+
+	<!-- ================================================================== -->
+	<!-- We place our calls to JavaScript at the bottom of the HTML         -->
+	<!-- that way, all of the HTML is loaded and the DOM is created before  -->
+	<!-- calling our scripts - see body onload="func()" for additional      -->
+	<!-- approaches that ensures we don't start using the DOM too early     -->
+	<!-- ================================================================== -->
+
+	<script type="text/javascript" src="./FormattingToolsLibrary.js"></script>
+
+	<script type="text/javascript" src="./MMRWebApp_Gazali_Tabark.js"></script>
+
+</body>
+
+</html>
